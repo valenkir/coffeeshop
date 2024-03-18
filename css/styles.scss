@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format(".ttf");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format(".ttf");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Playfair Display SC";
+  src: url("../assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf");
+  font-weight: 400;
+}
+
+//fonts: 14, 16, 20, 24, 36, 64
+//margin-right: 56px (nav), 16px (icons nav and hero imgs), 40px (hero features)
+//margin-top: 24px, 80px, 8px, 16px, 40px;
+
+$primaryColor: #282a3a;
+$accentColor: #6d1600;
+$primaryFontFamily: "Inter";
+$secondaryFontFamily: "Playfair Display";
+$top-margins: (8, 16, 24, 40, 80);
+$right-margins: (16, 40, 56);
+$breakpoints: (600px, 1000px, 1350px);
+
+@function setResponsiveFontSize($fontSize) {
+  @return clamp($fontSize - 0.25rem, 0.75rem + 1.5vw, $fontSize);
+}
+
+@each $top-margin in $top-margins {
+  .mt-#{$top-margin} {
+    margin-top: #{$top-margin}px;
+  }
+}
+
+@each $right-margin in $right-margins {
+  .mr-#{$right-margin} {
+    margin-right: #{$right-margin/4}px;
+  }
+}
+
+/*HELPER CLASSES*/
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primaryColor;
+  font-family: $primaryFontFamily;
+  font-weight: 400;
+  padding: 32px 20px;
+  //   font-size: getResponsiveFontSize(1.25rem);
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: (nth($breakpoints, 1) + 1)) and (max-width: nth($breakpoints, 2)) {
+  @each $right-margin in $right-margins {
+    .mr-#{$right-margin} {
+      margin-right: #{$right-margin/2}px;
+    }
+  }
+}
+
+@media only screen and (min-width: (nth($breakpoints, 2) + 1)) {
+  @each $right-margin in $right-margins {
+    .mr-#{$right-margin} {
+      margin-right: #{$right-margin}px;
+    }
+  }
+  body {
+    padding: 32px 80px 0;
+  }
+}
