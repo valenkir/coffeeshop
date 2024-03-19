@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #282a3a;
+  font-family: "Inter";
+  font-weight: 400;
+  padding: 32px 20px;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primaryBtn-product {
+  background-color: #6d1600;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Playfair Display SC";
+  position: relative;
+  max-width: 363px;
+  padding: 24px 68px 24px 48px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.primaryBtn-read-more {
+  background-color: #6d1600;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Playfair Display SC";
+  position: relative;
+  max-width: 280px;
+  padding: 24px 48px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.primaryBtn-arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.image-radius-tl-br {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.image-radius-tr-bl {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.social-proof-section {
+  justify-content: center;
+  gap: 40px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .mr-16 {
+    margin-right: 8px;
+  }
+  .mr-40 {
+    margin-right: 20px;
+  }
+  .mr-56 {
+    margin-right: 28px;
+  }
+  .primaryBtn-product {
+    background-color: #6d1600;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Playfair Display SC";
+    position: relative;
+    max-width: 363px;
+    padding: 24px 98px 24px 48px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+  .primaryBtn-arrow-icon {
+    right: 48px;
+  }
+  .social-info-group {
+    padding-right: 40px;
+    border-right: 1px solid;
+    -o-border-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
+       border-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
+    border-image-slice: 1;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .mr-16 {
+    margin-right: 16px;
+  }
+  .mr-40 {
+    margin-right: 40px;
+  }
+  .mr-56 {
+    margin-right: 56px;
+  }
+  body {
+    padding: 32px 80px 0;
+  }
+  .hero-text {
+    width: 45%;
+    margin: auto;
+  }
+  .image-radius-tl-br {
+    border-radius: 0;
+  }
+  .image-radius-tr-bl {
+    border-radius: 0;
+  }
+  .primaryBtn-product {
+    background-color: #6d1600;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Playfair Display SC";
+    position: relative;
+    max-width: 363px;
+    padding: 24px 98px 24px 48px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+  .primaryBtn-arrow-icon {
+    right: 48px;
+  }
+  .social-info-group {
+    padding-right: 40px;
+    border-right: 1px solid;
+    -o-border-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
+       border-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
+    border-image-slice: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

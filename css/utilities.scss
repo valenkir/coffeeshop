@@ -1,0 +1,104 @@
+@use "./variables";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "Playfair Display SC";
+  src: url("../assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf");
+  font-weight: 400;
+}
+
+/*FUNCTIONS*/
+
+@function setResponsiveFontSize($fontSize, $vwParam) {
+  @return clamp($fontSize - 0.25rem, 0.75rem + $vwParam, $fontSize);
+}
+
+/*HELPER CLASSES*/
+
+@each $topMargin in variables.$topMargins {
+  .mt-#{$topMargin} {
+    margin-top: #{$topMargin}px;
+  }
+}
+
+@each $rightMargin in variables.$rightMargins {
+  .mr-#{$rightMargin} {
+    margin-right: #{$rightMargin/4}px;
+  }
+}
+
+@each $fontSize in variables.$fontSizes {
+  .fs-#{$fontSize} {
+    @if ($fontSize > 20) {
+      font-size: setResponsiveFontSize(#{$fontSize}px, 3.5vw);
+    } @else {
+      font-size: setResponsiveFontSize(#{$fontSize}px, 1vw);
+    }
+  }
+}
+
+@each $fontWeight in variables.$fontWeights {
+  .fw-#{$fontWeight} {
+    font-weight: $fontWeight;
+  }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.fm-secondary {
+  font-family: variables.$secondaryFontFamily;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lh-1-6 {
+  line-height: 1.6;
+}
+
+.lh-1-9 {
+  line-height: 1.9;
+}
+
+.hr-style {
+  border-top: 1px solid;
+  border-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(40, 42, 58, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-image-slice: 1;
+}
