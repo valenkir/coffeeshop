@@ -54,10 +54,6 @@ body {
   gap: 40px;
 }
 
-.social-proof-text {
-  font-family: variables.$secondaryFontFamily;
-}
-
 @media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) and (max-width: nth(variables.$breakpoints, 2)) {
   @each $rightMargin in variables.$rightMargins {
     .mr-#{$rightMargin} {
