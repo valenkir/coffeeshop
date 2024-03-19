@@ -13,7 +13,6 @@
   src: url("../assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf");
   font-weight: 400;
 }
-/*FUNCTIONS*/
 /*HELPER CLASSES*/
 .mt-8 {
   margin-top: 8px;
@@ -120,4 +119,13 @@
   -o-border-image: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
      border-image: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
   border-image-slice: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #282a3a;
 }/*# sourceMappingURL=utilities.css.map */

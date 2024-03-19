@@ -20,8 +20,6 @@
   font-weight: 400;
 }
 
-/*FUNCTIONS*/
-
 @function setResponsiveFontSize($fontSize, $vwParam) {
   @return clamp($fontSize - 0.25rem, 0.75rem + $vwParam, $fontSize);
 }
@@ -101,4 +99,13 @@
     rgba(255, 255, 255, 1) 100%
   );
   border-image-slice: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$primaryColor;
 }

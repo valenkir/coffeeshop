@@ -2,7 +2,6 @@
 
 @mixin primaryBtn($maxWidth, $padding, $radiusTopRight, $radiusBottomLeft) {
   background-color: variables.$accentColor;
-  text-decoration: none;
   color: #ffffff;
   font-family: variables.$additionalFontFamily;
   position: relative;
@@ -10,10 +9,6 @@
   padding: $padding;
   border-top-right-radius: $radiusTopRight;
   border-bottom-left-radius: $radiusBottomLeft;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
