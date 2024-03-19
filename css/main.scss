@@ -1,0 +1,132 @@
+@use "./variables";
+
+@mixin primaryBtn($maxWidth, $padding, $radiusTopRight, $radiusBottomLeft) {
+  background-color: variables.$accentColor;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: variables.$additionalFontFamily;
+  position: relative;
+  max-width: $maxWidth;
+  padding: $padding;
+  border-top-right-radius: $radiusTopRight;
+  border-bottom-left-radius: $radiusBottomLeft;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: variables.$primaryColor;
+  font-family: variables.$primaryFontFamily;
+  font-weight: 400;
+  padding: 32px 20px;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primaryBtn-product {
+  $btnPadding: 24px 68px 24px 48px;
+  @include primaryBtn(363px, $btnPadding, 32px, 32px);
+}
+
+.primaryBtn-read-more {
+  $btnPadding: 24px 48px;
+  @include primaryBtn(280px, $btnPadding, 32px, 32px);
+}
+
+.primaryBtn-arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.image-radius-tl-br {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.image-radius-tr-bl {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.social-proof-section {
+  justify-content: center;
+  gap: 40px;
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) and (max-width: nth(variables.$breakpoints, 2)) {
+  @each $rightMargin in variables.$rightMargins {
+    .mr-#{$rightMargin} {
+      margin-right: #{calc($rightMargin/2)}px;
+    }
+  }
+  .primaryBtn-product {
+    $btnPadding: 24px 98px 24px 48px;
+    @include primaryBtn(363px, $btnPadding, 32px, 32px);
+  }
+  .primaryBtn-arrow-icon {
+    right: 48px;
+  }
+
+  .social-info-group {
+    padding-right: 40px;
+    border-right: 1px solid;
+    border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(40, 42, 58, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-image-slice: 1;
+  }
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 2) + 1)) {
+  @each $rightMargin in variables.$rightMargins {
+    .mr-#{$rightMargin} {
+      margin-right: #{$rightMargin}px;
+    }
+  }
+  body {
+    padding: 32px 80px 0;
+  }
+
+  .hero-text {
+    width: 45%;
+    margin: auto;
+  }
+
+  .image-radius-tl-br {
+    border-radius: 0;
+  }
+
+  .image-radius-tr-bl {
+    border-radius: 0;
+  }
+
+  .primaryBtn-product {
+    $btnPadding: 24px 98px 24px 48px;
+    @include primaryBtn(363px, $btnPadding, 32px, 32px);
+  }
+
+  .primaryBtn-arrow-icon {
+    right: 48px;
+  }
+
+  .social-info-group {
+    padding-right: 40px;
+    border-right: 1px solid;
+    border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(40, 42, 58, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-image-slice: 1;
+  }
+}
