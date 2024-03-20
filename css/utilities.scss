@@ -1,4 +1,5 @@
 @use "./variables";
+@use "sass:color";
 
 @font-face {
   font-family: "Inter";
@@ -34,7 +35,7 @@
 
 @each $rightMargin in variables.$rightMargins {
   .mr-#{$rightMargin} {
-    margin-right: #{$rightMargin/4}px;
+    margin-right: #{calc($rightMargin/4)} px;
   }
 }
 
@@ -52,6 +53,10 @@
   .fw-#{$fontWeight} {
     font-weight: $fontWeight;
   }
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mb-80 {
@@ -72,6 +77,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .d-inline-block {
@@ -99,6 +108,10 @@
     rgba(255, 255, 255, 1) 100%
   );
   border-image-slice: 1;
+}
+
+.section-main-heading {
+  color: color.adjust(variables.$primaryColor, $alpha: -0.44);
 }
 
 * {

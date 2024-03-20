@@ -1,4 +1,5 @@
 @use "./variables";
+@use "sass:color";
 
 @mixin primaryBtn($maxWidth, $padding, $radiusTopRight, $radiusBottomLeft) {
   background-color: variables.$accentColor;
@@ -17,6 +18,8 @@ body {
   font-weight: 400;
   padding: 32px 20px;
 }
+
+/*HERO*/
 
 .navbar {
   justify-content: space-between;
@@ -67,12 +70,40 @@ body {
   gap: 40px;
 }
 
-@media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) and (max-width: nth(variables.$breakpoints, 2)) {
+/*PRODUCTS*/
+
+.product-slider-btns {
+  max-width: 556px;
+  min-height: 77px;
+  background-color: variables.$additionalColor;
+  border-radius: 40px;
+  padding: 16px 52px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.product-slider-btn {
+  color: color.adjust(variables.$primaryColor, $alpha: -0.3);
+  padding: 16px 45px;
+  border: none;
+  background: none;
+  border-radius: 40px;
+}
+
+.product-slider-btn:focus,
+.product-slider-btn:active {
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) {
   @each $rightMargin in variables.$rightMargins {
     .mr-#{$rightMargin} {
       margin-right: #{calc($rightMargin/2)}px;
     }
   }
+
+  /*HERO*/
 
   .navbar-links {
     gap: 56px;
@@ -98,6 +129,11 @@ body {
     );
     border-image-slice: 1;
   }
+
+  /*PRODUCT*/
+  .product-slider-btns {
+    flex-wrap: nowrap;
+  }
 }
 
 @media only screen and (min-width: (nth(variables.$breakpoints, 2) + 1)) {
@@ -111,13 +147,10 @@ body {
     padding: 32px 80px 0;
   }
 
-  .navbar-links {
-    gap: 56px;
-  }
+  /*HERO*/
 
   .hero-text {
     width: 45%;
-    margin: auto;
   }
 
   .hero-image-small-screen {
@@ -134,26 +167,5 @@ body {
 
   .image-radius-tr-bl {
     border-radius: 0;
-  }
-
-  .primaryBtn-product {
-    $btnPadding: 24px 98px 24px 48px;
-    @include primaryBtn(363px, $btnPadding, 32px, 32px);
-  }
-
-  .primaryBtn-arrow-icon {
-    right: 48px;
-  }
-
-  .social-info-group {
-    padding-right: 40px;
-    border-right: 1px solid;
-    border-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(40, 42, 58, 1) 50%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    border-image-slice: 1;
   }
 }

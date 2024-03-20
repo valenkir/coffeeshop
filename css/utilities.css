@@ -35,15 +35,11 @@
 }
 
 .mr-16 {
-  margin-right: 4px;
+  margin-right: 4 px;
 }
 
 .mr-40 {
-  margin-right: 10px;
-}
-
-.mr-56 {
-  margin-right: 14px;
+  margin-right: 10 px;
 }
 
 .fs-14 {
@@ -78,6 +74,10 @@
   font-weight: 500;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -96,6 +96,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .d-inline-block {
@@ -119,6 +123,10 @@
   -o-border-image: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
      border-image: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
   border-image-slice: 1;
+}
+
+.section-main-heading {
+  color: rgba(40, 42, 58, 0.56);
 }
 
 * {
