@@ -43,6 +43,15 @@ body {
   right: 30px;
 }
 
+.hero-image-small-screen {
+  max-width: 60%;
+  object-fit: cover;
+}
+
+.hero-image-big-screen {
+  display: none;
+}
+
 .image-radius-tl-br {
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -109,6 +118,14 @@ body {
   .hero-text {
     width: 45%;
     margin: auto;
+  }
+
+  .hero-image-small-screen {
+    display: none;
+  }
+
+  .hero-image-big-screen {
+    display: inline-block;
   }
 
   .image-radius-tl-br {
