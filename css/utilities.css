@@ -78,6 +78,10 @@
   margin: auto;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -118,6 +122,10 @@
   line-height: 1.9;
 }
 
+.primary-color-70alpha {
+  color: rgba(40, 42, 58, 0.7);
+}
+
 .hr-style {
   border-top: 1px solid;
   -o-border-image: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(40, 42, 58) 50%, rgb(255, 255, 255) 100%);
@@ -127,6 +135,14 @@
 
 .section-main-heading {
   color: rgba(40, 42, 58, 0.56);
+}
+
+body {
+  color: #282a3a;
+  font-family: "Inter";
+  font-weight: 400;
+  padding: 32px 20px;
+  font-size: clamp(16px - 0.25rem, 0.75rem + 1vw, 16px);
 }
 
 * {

@@ -1,10 +1,3 @@
-body {
-  color: #282a3a;
-  font-family: "Inter";
-  font-weight: 400;
-  padding: 32px 20px;
-}
-
 /*HERO*/
 .navbar {
   justify-content: space-between;
@@ -81,7 +74,6 @@ body {
 }
 
 .product-slider-btn {
-  color: rgba(40, 42, 58, 0.7);
   padding: 16px 45px;
   border: none;
   background: none;
@@ -91,6 +83,17 @@ body {
 .product-slider-btn:focus,
 .product-slider-btn:active {
   background-color: #ffffff;
+}
+
+.product-card {
+  max-width: 302px;
+  padding: 16px 24px;
+}
+
+.glide__slides li.slider-card-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 601px) {
@@ -127,6 +130,10 @@ body {
   /*PRODUCT*/
   .product-slider-btns {
     flex-wrap: nowrap;
+  }
+  .glide__slides li.slider-card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 1001px) {

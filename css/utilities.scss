@@ -59,6 +59,10 @@
   margin: auto;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -99,6 +103,10 @@
   line-height: 1.9;
 }
 
+.primary-color-70alpha {
+  color: color.adjust(variables.$primaryColor, $alpha: -0.3);
+}
+
 .hr-style {
   border-top: 1px solid;
   border-image: linear-gradient(
@@ -112,6 +120,14 @@
 
 .section-main-heading {
   color: color.adjust(variables.$primaryColor, $alpha: -0.44);
+}
+
+body {
+  color: variables.$primaryColor;
+  font-family: variables.$primaryFontFamily;
+  font-weight: 400;
+  padding: 32px 20px;
+  font-size: setResponsiveFontSize(16px, 1vw);
 }
 
 * {

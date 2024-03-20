@@ -12,13 +12,6 @@
   border-bottom-left-radius: $radiusBottomLeft;
 }
 
-body {
-  color: variables.$primaryColor;
-  font-family: variables.$primaryFontFamily;
-  font-weight: 400;
-  padding: 32px 20px;
-}
-
 /*HERO*/
 
 .navbar {
@@ -84,7 +77,6 @@ body {
 }
 
 .product-slider-btn {
-  color: color.adjust(variables.$primaryColor, $alpha: -0.3);
   padding: 16px 45px;
   border: none;
   background: none;
@@ -94,6 +86,17 @@ body {
 .product-slider-btn:focus,
 .product-slider-btn:active {
   background-color: #ffffff;
+}
+
+.product-card {
+  max-width: 302px;
+  padding: 16px 24px;
+}
+
+.glide__slides li.slider-card-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) {
@@ -133,6 +136,11 @@ body {
   /*PRODUCT*/
   .product-slider-btns {
     flex-wrap: nowrap;
+  }
+
+  .glide__slides li.slider-card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
