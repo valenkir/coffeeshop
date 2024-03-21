@@ -8,24 +8,31 @@
     <meta name="keywords" content="Coffee" />
     <title>Ngopi - Coffeeshop</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.css"
+    />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.core.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   </head>
   <body>
     <header id="home-header">
       <nav>
-        <ul class="navbar d-flex">
+        <ul class="d-flex justify-between items-center">
           <li>
             <img src="./images/logo.svg" alt="Ngopi logo" />
           </li>
           <li>
             <ul class="d-flex flex-wrap justify-center navbar-links">
-              <li class="fs-20"><a href="">Products</a></li>
+              <li class="fs-20"><a href="#product-section">Products</a></li>
               <li class="fs-20"><a href="">About us</a></li>
               <li class="fs-20"><a href="">Testimonial</a></li>
               <li class="fs-20"><a href="">Contact</a></li>
@@ -157,79 +164,434 @@
             <ul class="glide__slides">
               <li class="glide__slide slider-card-wrapper d-flex">
                 <div class="product-card">
-                  <img />
-                  <h4 class="fs-24 fw-500">Chocolate Latte</h4>
+                  <img
+                    src="./images/chocolate-latte.png"
+                    alt="A cup of chocolate latte"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Chocolate Latte</h4>
                   <div class="mt-16">
-                    <img src="./images/star-review.svg" alt="Star icon" />
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
                     <span class="fs-20 fw-700 primary-color-70alpha">4.9</span>
                     <span class="primary-color-70alpha">(360) reviews</span>
                     <p class="primary-color-70alpha mt-16 mb-16">
                       Lorem ipsum dolor sit amet consectetur. Scelerisque urna
                       vel sit dolor fringilla
                     </p>
-                    <span class="fs-20 fw-700 primary-color-70alpha">$2.9</span>
-                    <a class="">+</a>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.9</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
                 <div class="product-card">
-                  <img />
-                  <h4 class="fs-24 fw-500">Mocha Latte</h4>
+                  <img
+                    src="./images/mocha-latte.png"
+                    alt="A cup of mocha latte"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Mocha Latte</h4>
                   <div class="mt-16">
-                    <img src="./images/star-review.svg" alt="Star icon" />
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
                     <span class="fs-20 fw-700 primary-color-70alpha">5</span>
                     <span class="primary-color-70alpha">(180) reviews</span>
                     <p class="primary-color-70alpha mt-16 mb-16">
                       Lorem ipsum dolor sit amet consectetur. Scelerisque urna
                       vel sit dolor fringilla
                     </p>
-                    <span class="fs-20 fw-700 primary-color-70alpha">$2.7</span>
-                    <a class="">+</a>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.7</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
                 <div class="product-card">
-                  <img />
-                  <h4 class="fs-24 fw-500">Coffee Latte</h4>
+                  <img
+                    src="./images/coffee-latte.png"
+                    alt="A cup of latte"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Coffee Latte</h4>
                   <div class="mt-16">
-                    <img src="./images/star-review.svg" alt="Star icon" />
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
                     <span class="fs-20 fw-700 primary-color-70alpha">4.8</span>
                     <span class="primary-color-70alpha">(450) reviews</span>
                     <p class="primary-color-70alpha mt-16 mb-16">
                       Lorem ipsum dolor sit amet consectetur. Scelerisque urna
                       vel sit dolor fringilla
                     </p>
-                    <span class="fs-20 fw-700 primary-color-70alpha">$2.9</span>
-                    <a class="">+</a>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.9</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
                 <div class="product-card">
-                  <img />
-                  <h4 class="fs-24 fw-500">Hazelnut Latte</h4>
+                  <img
+                    src="./images/hazelnut-latte.png"
+                    alt="A cup of hazelnut latte"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Hazelnut Latte</h4>
                   <div class="mt-16">
-                    <img src="./images/star-review.svg" alt="Star icon" />
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
                     <span class="fs-20 fw-700 primary-color-70alpha">4.9</span>
                     <span class="primary-color-70alpha">(360) reviews</span>
                     <p class="primary-color-70alpha mt-16 mb-16">
                       Lorem ipsum dolor sit amet consectetur. Scelerisque urna
                       vel sit dolor fringilla
                     </p>
-                    <span class="fs-20 fw-700 primary-color-70alpha">$2.8</span>
-                    <a class="">+</a>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.8</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="glide__slide">1</li>
-              <li class="glide__slide">2</li>
-              <li class="glide__slide">3</li>
+              <li class="glide__slide slider-card-wrapper d-flex">
+                <div class="product-card">
+                  <img
+                    src="./images/flat-white.png"
+                    alt="A cup of flat white"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Flat white</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">5</span>
+                    <span class="primary-color-70alpha">(460) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha">$3</span>
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/irish-coffee.png"
+                    alt="A glass of Irish coffee"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Irish Coffee</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.5</span>
+                    <span class="primary-color-70alpha">(100) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$3.5</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/cappuccino.png"
+                    alt="A cup of cappuccino"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Cappuccino</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.9</span>
+                    <span class="primary-color-70alpha">(600) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.9</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/affogato.png"
+                    alt="A glass of affogato dessert"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Affogato</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.7</span>
+                    <span class="primary-color-70alpha">(260) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.5</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide slider-card-wrapper d-flex">
+                <div class="product-card">
+                  <img
+                    src="./images/americano.png"
+                    alt="A cup of americano"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Americano</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.9</span>
+                    <span class="primary-color-70alpha">(401) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.5</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/red-eye.png"
+                    alt="A cup of the red-eye coffee"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Red Eye</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.3</span>
+                    <span class="primary-color-70alpha">(180) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.2</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/ristretto.png"
+                    alt="A cup of ristretto"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Ristretto</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.8</span>
+                    <span class="primary-color-70alpha">(150) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.2</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/espresso.png"
+                    alt="A cup of espresso"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Espresso</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.7</span>
+                    <span class="primary-color-70alpha">(410) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha">$2</span>
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide slider-card-wrapper d-flex">
+                <div class="product-card">
+                  <img
+                    src="./images/iced-latte.png"
+                    alt="A glass of iced latte"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Iced latte</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">5</span>
+                    <span class="primary-color-70alpha">(460) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha">$3</span>
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card">
+                  <img
+                    src="./images/frappe.png"
+                    alt="A glass of frappe coffee"
+                    class="product-card-img"
+                  />
+                  <h4 class="fs-24 fw-500 mt-16">Frappé</h4>
+                  <div class="mt-16">
+                    <img
+                      src="./images/star-review.svg"
+                      alt="Star icon"
+                      class="product-star-icon"
+                    />
+                    <span class="fs-20 fw-700 primary-color-70alpha">4.5</span>
+                    <span class="primary-color-70alpha">(200) reviews</span>
+                    <p class="primary-color-70alpha mt-16 mb-16">
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque urna
+                      vel sit dolor fringilla
+                    </p>
+                    <div class="d-flex justify-between items-center">
+                      <span class="fs-20 fw-700 primary-color-70alpha"
+                        >$2.9</span
+                      >
+                      <a class="product-card-btn"
+                        ><i class="fa-solid fa-plus" style="color: #ffffff"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
           <div
             class="glide__bullets text-center mt-40"
             data-glide-el="controls[nav]"
           >
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
-            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button
+              class="glide__bullet product-slider-bullet"
+              data-glide-dir="=0"
+            ></button>
+            <button
+              class="glide__bullet product-slider-bullet"
+              data-glide-dir="=1"
+            ></button>
+            <button
+              class="glide__bullet product-slider-bullet"
+              data-glide-dir="=2"
+            ></button>
+            <button
+              class="glide__bullet product-slider-bullet"
+              data-glide-dir="=3"
+            ></button>
           </div>
         </div>
         <hr class="hr-style mb-80" />

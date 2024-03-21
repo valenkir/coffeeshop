@@ -10,14 +10,15 @@
   padding: $padding;
   border-top-right-radius: $radiusTopRight;
   border-bottom-left-radius: $radiusBottomLeft;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  &:hover,
+  &:active {
+    background-color: color.scale(variables.$accentColor, $lightness: 15%);
+  }
 }
 
 /*HERO*/
-
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-}
 
 .navbar-links {
   gap: 10px;
@@ -90,13 +91,48 @@
 
 .product-card {
   max-width: 302px;
-  padding: 16px 24px;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.product-card-img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.product-star-icon {
+  margin-bottom: 5px;
+}
+
+.product-card-btn {
+  $btnPadding: 8px;
+  @include primaryBtn(32px, $btnPadding, 12px, 12px);
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .glide__slides li.slider-card-wrapper {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 24px;
+}
+
+.product-slider-bullet {
+  border-radius: 100%;
+  width: 8px;
+  height: 12px;
+  border: none;
+  background-color: #d9d9d9;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: variables.$accentColor;
+  }
+  &swipeable {
+    cursor: grab;
+  }
 }
 
 @media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) {

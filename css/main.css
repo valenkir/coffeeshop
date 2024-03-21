@@ -1,9 +1,4 @@
 /*HERO*/
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-}
-
 .navbar-links {
   gap: 10px;
 }
@@ -17,6 +12,11 @@
   padding: 24px 68px 24px 48px;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+.primaryBtn-product:hover, .primaryBtn-product:active {
+  background-color: #a92200;
 }
 
 .primaryBtn-read-more {
@@ -28,6 +28,11 @@
   padding: 24px 48px;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+.primaryBtn-read-more:hover, .primaryBtn-read-more:active {
+  background-color: #a92200;
 }
 
 .primaryBtn-arrow-icon {
@@ -87,13 +92,58 @@
 
 .product-card {
   max-width: 302px;
-  padding: 16px 24px;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.product-card-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+
+.product-star-icon {
+  margin-bottom: 5px;
+}
+
+.product-card-btn {
+  background-color: #6d1600;
+  color: #ffffff;
+  font-family: "Playfair Display SC";
+  position: relative;
+  max-width: 32px;
+  padding: 8px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+.product-card-btn:hover, .product-card-btn:active {
+  background-color: #a92200;
+}
+.product-card-btn:hover {
+  cursor: pointer;
 }
 
 .glide__slides li.slider-card-wrapper {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 24px;
+}
+
+.product-slider-bullet {
+  border-radius: 100%;
+  width: 8px;
+  height: 12px;
+  border: none;
+  background-color: #d9d9d9;
+}
+.product-slider-bullet:active, .product-slider-bullet:focus, .product-slider-bullet:hover {
+  background-color: #6d1600;
+}
+.product-slider-bulletswipeable {
+  cursor: grab;
 }
 
 @media only screen and (min-width: 601px) {
@@ -116,6 +166,11 @@
     padding: 24px 98px 24px 48px;
     border-top-right-radius: 32px;
     border-bottom-left-radius: 32px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+  }
+  .primaryBtn-product:hover, .primaryBtn-product:active {
+    background-color: #a92200;
   }
   .primaryBtn-arrow-icon {
     right: 48px;
