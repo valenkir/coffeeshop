@@ -35,7 +35,7 @@
 
 @each $rightMargin in variables.$rightMargins {
   .mr-#{$rightMargin} {
-    margin-right: #{calc($rightMargin/4)} px;
+    margin-right: #{calc($rightMargin/4)}px;
   }
 }
 

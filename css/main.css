@@ -43,8 +43,6 @@
 
 .hero-image-small-screen {
   max-width: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .hero-image-big-screen {
