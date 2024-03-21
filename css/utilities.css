@@ -86,6 +86,10 @@
   margin-bottom: 80px;
 }
 
+.gap-24 {
+  gap: 24px;
+}
+
 .fm-secondary {
   font-family: "Playfair Display";
 }

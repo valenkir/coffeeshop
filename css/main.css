@@ -19,25 +19,9 @@
   background-color: #a92200;
 }
 
-.primaryBtn-read-more {
-  background-color: #6d1600;
-  color: #ffffff;
-  font-family: "Playfair Display SC";
-  position: relative;
-  max-width: 280px;
-  padding: 24px 48px;
-  border-top-right-radius: 32px;
-  border-bottom-left-radius: 32px;
-  transition-property: background-color;
-  transition-duration: 500ms;
-}
-.primaryBtn-read-more:hover, .primaryBtn-read-more:active {
-  background-color: #a92200;
-}
-
-.primaryBtn-arrow-icon {
+.primaryBtn-arrow-icon-explore {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 30px;
 }
 
@@ -94,14 +78,20 @@
   box-sizing: border-box;
 }
 
-.product-card-img {
+.product-star-icon {
+  margin-bottom: 5px;
+}
+
+.container-img {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
 }
-
-.product-star-icon {
-  margin-bottom: 5px;
+.container-img-about-us {
+  max-height: 378px;
+}
+.container-img-about-us-below {
+  align-self: flex-end;
 }
 
 .product-card-btn {
@@ -127,7 +117,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
 }
 
 .product-slider-bullet {
@@ -144,6 +133,47 @@
   cursor: grab;
 }
 
+/*ABOUT-US*/
+.primaryBtn-read-more {
+  background-color: #6d1600;
+  color: #ffffff;
+  font-family: "Playfair Display SC";
+  position: relative;
+  max-width: 280px;
+  padding: 24px 78px 24px 48px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+.primaryBtn-read-more:hover, .primaryBtn-read-more:active {
+  background-color: #a92200;
+}
+
+.primaryBtn-arrow-icon-read-more {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.about-us-section {
+  display: grid;
+  width: 100%;
+  gap: 80px;
+}
+
+.about-us-img-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 375px) {
+  .primaryBtn-arrow-icon-explore {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}
 @media only screen and (min-width: 601px) {
   .mr-16 {
     margin-right: 8px;
@@ -169,9 +199,6 @@
   }
   .primaryBtn-product:hover, .primaryBtn-product:active {
     background-color: #a92200;
-  }
-  .primaryBtn-arrow-icon {
-    right: 48px;
   }
   .social-info-group {
     padding-right: 40px;
@@ -214,5 +241,17 @@
   }
   .image-radius-tr-bl {
     border-radius: 0;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  .about-us-section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+  }
+  .about-us-img-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=main.css.map */

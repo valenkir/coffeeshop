@@ -86,7 +86,7 @@
               >Explore Product<img
                 src="./images/arrow-button.svg"
                 alt="Arrow icon"
-                class="primaryBtn-arrow-icon"
+                class="primaryBtn-arrow-icon-explore"
             /></a>
           </div>
           <div class="mt-80 mb-80">
@@ -175,12 +175,12 @@
         <div class="glide mb-80">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide slider-card-wrapper d-flex">
+              <li class="glide__slide slider-card-wrapper d-flex gap-24">
                 <div class="product-card">
                   <img
                     src="./images/chocolate-latte.png"
                     alt="A cup of chocolate latte"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Chocolate Latte</h4>
                   <div class="mt-16">
@@ -209,7 +209,7 @@
                   <img
                     src="./images/mocha-latte.png"
                     alt="A cup of mocha latte"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Mocha Latte</h4>
                   <div class="mt-16">
@@ -238,7 +238,7 @@
                   <img
                     src="./images/coffee-latte.png"
                     alt="A cup of latte"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Coffee Latte</h4>
                   <div class="mt-16">
@@ -267,7 +267,7 @@
                   <img
                     src="./images/hazelnut-latte.png"
                     alt="A cup of hazelnut latte"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Hazelnut Latte</h4>
                   <div class="mt-16">
@@ -277,7 +277,7 @@
                       class="product-star-icon"
                     />
                     <span class="fs-20 fw-700 primary-color-70alpha">4.9</span>
-                    <span class="primary-color-70alpha">(360) reviews</span>
+                    <span class="primary-color-70alpha">(390) reviews</span>
                     <p class="primary-color-70alpha mt-16 mb-16">
                       Lorem ipsum dolor sit amet consectetur. Scelerisque urna
                       vel sit dolor fringilla
@@ -298,7 +298,7 @@
                   <img
                     src="./images/flat-white.png"
                     alt="A cup of flat white"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Flat white</h4>
                   <div class="mt-16">
@@ -325,7 +325,7 @@
                   <img
                     src="./images/irish-coffee.png"
                     alt="A glass of Irish coffee"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Irish Coffee</h4>
                   <div class="mt-16">
@@ -354,7 +354,7 @@
                   <img
                     src="./images/cappuccino.png"
                     alt="A cup of cappuccino"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Cappuccino</h4>
                   <div class="mt-16">
@@ -383,7 +383,7 @@
                   <img
                     src="./images/affogato.png"
                     alt="A glass of affogato dessert"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Affogato</h4>
                   <div class="mt-16">
@@ -414,7 +414,7 @@
                   <img
                     src="./images/americano.png"
                     alt="A cup of americano"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Americano</h4>
                   <div class="mt-16">
@@ -443,7 +443,7 @@
                   <img
                     src="./images/red-eye.png"
                     alt="A cup of the red-eye coffee"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Red Eye</h4>
                   <div class="mt-16">
@@ -472,7 +472,7 @@
                   <img
                     src="./images/ristretto.png"
                     alt="A cup of ristretto"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Ristretto</h4>
                   <div class="mt-16">
@@ -501,7 +501,7 @@
                   <img
                     src="./images/espresso.png"
                     alt="A cup of espresso"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Espresso</h4>
                   <div class="mt-16">
@@ -530,7 +530,7 @@
                   <img
                     src="./images/iced-latte.png"
                     alt="A glass of iced latte"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Iced latte</h4>
                   <div class="mt-16">
@@ -557,7 +557,7 @@
                   <img
                     src="./images/frappe.png"
                     alt="A glass of frappe coffee"
-                    class="product-card-img"
+                    class="container-img"
                   />
                   <h4 class="fs-24 fw-500 mt-16">Frappé</h4>
                   <div class="mt-16">
@@ -607,6 +607,53 @@
             ></button>
           </div>
         </div>
+        <hr class="hr-style mb-80" />
+      </section>
+      <section id="about-us-section">
+        <div class="m-auto text-center">
+          <h3 class="section-main-heading fs-24">About us</h3>
+          <h2 class="fs-36 fm-secondary mt-8">Why we are the best</h2>
+        </div>
+        <section
+          id="about-us-info-section"
+          class="about-us-section mt-80 mb-80"
+        >
+          <div>
+            <p class="fs-20 lh-1-9 mt-24">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc. Viverra malesuada viverra id
+              vel tortor dui adipiscing.
+            </p>
+            <p class="fs-20 lh-1-9 mt-24">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet. Integer sed pretium odio
+              lectus at malesuada sed eget nunc.
+            </p>
+            <p class="fs-20 lh-1-9 mt-24">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit
+              dolor fringilla volutpat lectus amet.
+            </p>
+            <a href="" class="mt-24 d-inline-block primaryBtn-read-more fs-24"
+              >Read More<img
+                src="./images/arrow-button.svg"
+                alt="Arrow icon"
+                class="primaryBtn-arrow-icon-read-more"
+            /></a>
+          </div>
+          <div class="d-flex gap-24 about-us-img-container">
+            <img
+              src="./images/about-us-holders.png"
+              alt="Coffee holders"
+              class="container-img-about-us-below"
+            />
+            <img
+              src="./images/about-us-coffee-beans.png"
+              alt="Coffee beans in a cup"
+              class="container-img-about-us"
+            />
+          </div>
+        </section>
         <hr class="hr-style mb-80" />
       </section>
     </main>

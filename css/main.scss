@@ -18,6 +18,12 @@
   }
 }
 
+@mixin arrow-icon($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
 /*HERO*/
 
 .navbar-links {
@@ -29,15 +35,8 @@
   @include primaryBtn(363px, $btnPadding, 32px, 32px);
 }
 
-.primaryBtn-read-more {
-  $btnPadding: 24px 48px;
-  @include primaryBtn(280px, $btnPadding, 32px, 32px);
-}
-
-.primaryBtn-arrow-icon {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+.primaryBtn-arrow-icon-explore {
+  @include arrow-icon(30px, 30px);
 }
 
 .hero-image-small-screen {
@@ -94,13 +93,20 @@
   box-sizing: border-box;
 }
 
-.product-card-img {
-  object-fit: contain;
-  max-width: 100%;
-}
-
 .product-star-icon {
   margin-bottom: 5px;
+}
+
+.container-img {
+  object-fit: contain;
+  max-width: 100%;
+
+  &-about-us {
+    max-height: 378px;
+    &-below {
+      align-self: flex-end;
+    }
+  }
 }
 
 .product-card-btn {
@@ -115,7 +121,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
 }
 
 .product-slider-bullet {
@@ -134,7 +139,34 @@
   }
 }
 
-@media only screen and (min-width: (nth(variables.$breakpoints, 1) + 1)) {
+/*ABOUT-US*/
+.primaryBtn-read-more {
+  $btnPadding: 24px 78px 24px 48px;
+  @include primaryBtn(280px, $btnPadding, 32px, 32px);
+}
+
+.primaryBtn-arrow-icon-read-more {
+  @include arrow-icon(20px, 25px);
+}
+
+.about-us-section {
+  display: grid;
+  width: 100%;
+  gap: 80px;
+}
+
+.about-us-img-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 1))) {
+  .primaryBtn-arrow-icon-explore {
+    @include arrow-icon(20px, 30px);
+  }
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 2) + 1)) {
   @each $rightMargin in variables.$rightMargins {
     .mr-#{$rightMargin} {
       margin-right: #{calc($rightMargin/2)}px;
@@ -150,10 +182,6 @@
   .primaryBtn-product {
     $btnPadding: 24px 98px 24px 48px;
     @include primaryBtn(363px, $btnPadding, 32px, 32px);
-  }
-
-  .primaryBtn-arrow-icon {
-    right: 48px;
   }
 
   .social-info-group {
@@ -179,7 +207,7 @@
   }
 }
 
-@media only screen and (min-width: (nth(variables.$breakpoints, 2) + 1)) {
+@media only screen and (min-width: (nth(variables.$breakpoints, 3) + 1)) {
   @each $rightMargin in variables.$rightMargins {
     .mr-#{$rightMargin} {
       margin-right: #{$rightMargin}px;
@@ -210,5 +238,19 @@
 
   .image-radius-tr-bl {
     border-radius: 0;
+  }
+}
+
+@media only screen and (min-width: (nth(variables.$breakpoints, 4) + 1)) {
+  .about-us-section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .about-us-img-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
