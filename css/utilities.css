@@ -118,6 +118,14 @@
   display: inline-block;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .text-center {
   text-align: center;
 }
