@@ -80,11 +80,9 @@
   border: none;
   background: none;
   border-radius: 40px;
-}
-
-.product-slider-btn:focus,
-.product-slider-btn:active {
-  background-color: #ffffff;
+  &-active {
+    background-color: #ffffff;
+  }
 }
 
 .product-card {
@@ -118,7 +116,7 @@
   }
 }
 
-.glide__slides li.slider-card-wrapper {
+.glide__slide {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -202,7 +200,7 @@
     flex-wrap: nowrap;
   }
 
-  .glide__slides li.slider-card-wrapper {
+  .glide__slide {
     flex-direction: row;
     flex-wrap: wrap;
   }

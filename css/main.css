@@ -66,9 +66,7 @@
   background: none;
   border-radius: 40px;
 }
-
-.product-slider-btn:focus,
-.product-slider-btn:active {
+.product-slider-btn-active {
   background-color: #ffffff;
 }
 
@@ -114,7 +112,7 @@
   cursor: pointer;
 }
 
-.glide__slides li.slider-card-wrapper {
+.glide__slide {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -212,7 +210,7 @@
   .product-slider-btns {
     flex-wrap: nowrap;
   }
-  .glide__slides li.slider-card-wrapper {
+  .glide__slide {
     flex-direction: row;
     flex-wrap: wrap;
   }
